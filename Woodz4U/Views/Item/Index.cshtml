@@ -1,0 +1,40 @@
+﻿@model Woodz4U.Models.ItemModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Material</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Item) {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Material
+            </td>
+            <td>
+                @item.Price
+            </td>
+            <td>
+                @item.Quantity
+            </td>
+            <td>
+                @*Add actions here?*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
